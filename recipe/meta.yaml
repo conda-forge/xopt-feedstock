@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "0.2.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4b904eb34d8822a3dcd99dde1f5eece4d6f8446ed4b319ebac37e3a6a2855007
+  sha256: 0ec535ba08e7692ce8c5e3668b2210545b5dab37cea9fdcbca118f572a874f6e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
-requirements:  
+requirements:
   host:
     - python >=3.6
     - pip
   run:
     - python >=3.6
-    - numpy    
+    - numpy
     - pyyaml
     - deap
 
@@ -33,7 +33,7 @@ about:
   license: APACHE-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Accelerator optimization, based on DEAP'
+  summary: Accelerator optimization, based on DEAP
   description: |
     Accelerator optimization, based on DEAP
 
