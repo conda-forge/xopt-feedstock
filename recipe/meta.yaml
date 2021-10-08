@@ -23,6 +23,11 @@ requirements:
     - numpy
     - pyyaml
     - deap
+    - pytorch
+    - botorch
+    - gpytorch
+    - pandas
+    - ipywidgets
 
 test:
   imports:
