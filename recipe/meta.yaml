@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -28,6 +28,7 @@ requirements:
     - gpytorch
     - pandas
     - ipywidgets
+    - tqdm
 
 test:
   imports:
@@ -38,9 +39,9 @@ about:
   license: APACHE-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: Accelerator optimization, based on DEAP
+  summary: Flexible optimization of arbitrary problems in Python.
   description: |
-    Accelerator optimization, based on DEAP
+    Flexible optimization of arbitrary problems in Python.
 
 extra:
   recipe-maintainers:
