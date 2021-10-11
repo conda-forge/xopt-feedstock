@@ -7,9 +7,9 @@ Package license: APACHE-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xopt-feedstock/blob/master/LICENSE.txt)
 
-Summary: Accelerator optimization, based on DEAP
+Summary: Flexible optimization of arbitrary problems in Python.
 
-Accelerator optimization, based on DEAP
+Flexible optimization of arbitrary problems in Python.
 
 
 Current build status
@@ -39,6 +39,7 @@ Installing `xopt` from the `conda-forge` channel can be achieved by adding `cond
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `xopt` can be installed with:
