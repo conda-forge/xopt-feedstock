@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9d363c6fe0724d86ee471b4f888f433579a1552c2c06719f95251b85ed0de571
+  sha256: e24fd2497b6ccbb1ac8d6f24670f91513f21228b7c0756571907074647d1b543
 
 build:
   noarch: python
@@ -16,13 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy
     - pyyaml
     - deap
+    - pytorch
+    - botorch
+    - gpytorch
+    - pandas
+    - ipywidgets
+    - tqdm
 
 test:
   imports:
@@ -33,9 +39,9 @@ about:
   license: APACHE-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: Accelerator optimization, based on DEAP
+  summary: Flexible optimization of arbitrary problems in Python.
   description: |
-    Accelerator optimization, based on DEAP
+    Flexible optimization of arbitrary problems in Python.
 
 extra:
   recipe-maintainers:
