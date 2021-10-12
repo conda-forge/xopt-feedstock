@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: e24fd2497b6ccbb1ac8d6f24670f91513f21228b7c0756571907074647d1b543
+  sha256: 7f1bc0015bfe8d6245a2d42f9d03b06f7f81a5563471f834380b42ce32b33757
 
 build:
   noarch: python
@@ -36,8 +36,8 @@ test:
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
-  license: APACHE-2.0
-  license_family: APACHE
+  license: Apache-2.0 
+  license_family: Apache
   license_file: LICENSE
   summary: Flexible optimization of arbitrary problems in Python.
   description: |
