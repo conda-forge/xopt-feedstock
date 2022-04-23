@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9d363c6fe0724d86ee471b4f888f433579a1552c2c06719f95251b85ed0de571
+  sha256: 7f1bc0015bfe8d6245a2d42f9d03b06f7f81a5563471f834380b42ce32b33757
 
 build:
   noarch: python
@@ -36,8 +36,8 @@ test:
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
-  license: APACHE-2.0
-  license_family: APACHE
+  license: Apache-2.0 
+  license_family: Apache
   license_file: LICENSE
   summary: Flexible optimization of arbitrary problems in Python.
   description: |
