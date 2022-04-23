@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7f1bc0015bfe8d6245a2d42f9d03b06f7f81a5563471f834380b42ce32b33757
+  sha256: 68c81c8b06e2a75f4d7f22e1bdd8eb0aeffd01e97a9708bb5a7b4ab779d03b5e
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - pandas
     - ipywidgets
     - tqdm
+    - pydantic
 
 test:
   imports:
