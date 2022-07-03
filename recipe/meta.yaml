@@ -35,7 +35,7 @@ test:
   requires:
     - pytest
   commands:
-    - python scripts/run_tests.py
+    - python -m pytest --pyargs xopt
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
