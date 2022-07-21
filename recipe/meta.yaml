@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0ec238a7294306373aa2f21a21600ea8883ecba11c94e4ddf99016cdef6ae7e0
+  sha256: 28beffecf4769218a62f3504941cc05827c8abdca1c764f4022723ecd01c4b77
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ test:
   requires:
     - pytest
   source_files:
-    - tests 
+    - tests
   commands:
     - pytest tests
 
