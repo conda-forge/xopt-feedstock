@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 71fed690dfd13d6afe6acd9aa8c551fc4a812e0e268ea33b09cf198ed0981e58
+  sha256: c36dad66270dd2655f4968cb5c510abd49c90b38cc49f50cc4356d4d609fb448
 
 build:
   noarch: python
