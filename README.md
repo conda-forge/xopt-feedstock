@@ -1,4 +1,4 @@
-About Xopt
+About xopt
 ==========
 
 Home: https://github.com/ChristopherMayes/xopt
