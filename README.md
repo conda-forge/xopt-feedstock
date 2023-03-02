@@ -1,11 +1,11 @@
-About xopt
-==========
+About xopt-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xopt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ChristopherMayes/xopt
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xopt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flexible optimization of arbitrary problems in Python.
 
