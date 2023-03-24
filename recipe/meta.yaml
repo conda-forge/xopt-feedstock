@@ -16,18 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - pyyaml
     - deap
     - pytorch
-    - botorch >=0.6.1
+    - botorch >=0.8.2
     - gpytorch
     - pandas
-    - pydantic >=1.9.0
+    - pydantic >=1.10.0
 
 test:
   imports:
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - ChristopherMayes
+    - roussel-ryan
