@@ -24,10 +24,10 @@ requirements:
     - pyyaml
     - deap
     - pytorch
-    - botorch >=0.6.1
+    - botorch >=0.8.2
     - gpytorch
     - pandas
-    - pydantic >=1.9.0
+    - pydantic >=1.10.0
     - orjson
 
 test:
