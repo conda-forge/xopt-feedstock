@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 52b197fbf5f4fe49bce0fb5a1408bcaab506b7f491bdc91125cb6fa904071502
+  sha256: bbc922224f0fc09212d3dfd2c328151198ea38bdd1dd64b9a824f9d1dbb6127f
 
 build:
   noarch: python
