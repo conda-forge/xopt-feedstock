@@ -35,6 +35,8 @@ test:
     - xopt
   requires:
     - pytest
+    - mpi4py
+    - dask
   source_files:
     - tests
   commands:
