@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "1.4.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bbc922224f0fc09212d3dfd2c328151198ea38bdd1dd64b9a824f9d1dbb6127f
+  sha256: 56659f75fc2500ff957ff50109d0640fc331611ad93fd83cd344f9788d4d4bb1
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - pyyaml
     - deap
@@ -27,7 +27,7 @@ requirements:
     - botorch >=0.8.2
     - gpytorch
     - pandas
-    - pydantic ==1.10.9
+    - pydantic >=2.3
     - orjson
 
 test:
