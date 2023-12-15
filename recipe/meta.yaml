@@ -40,7 +40,7 @@ test:
   source_files:
     - tests
   commands:
-    - pytest -vr tests
+    - pytest -vv --tb=long tests
 
 about:
   home: https://github.com/ChristopherMayes/{{ name }}
