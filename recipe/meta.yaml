@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "2.2.2" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b13c35a1a6c98c33736126daadc13ddb068fb4577eecf115ddc5c1051c28e344
+  sha256: b05c9e22bffbc631c66a94391934e1e9eb5f84abce2dad3e0534adac28bc90240
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - pyyaml
     - deap
     - pytorch
-    - botorch >=0.8.2
+    - botorch >=0.9.2,<=0.10.0
     - gpytorch
     - pandas
     - pydantic >=2.3
