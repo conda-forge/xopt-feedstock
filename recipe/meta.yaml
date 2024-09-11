@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -44,7 +44,7 @@ test:
     - pytest tests
 
 about:
-  home: https://github.com/ChristopherMayes/{{ name }}
+  home: https://github.com/xopt-org/{{ name }}
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
