@@ -3,7 +3,7 @@ About xopt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xopt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ChristopherMayes/xopt
+Home: https://github.com/xopt-org/xopt
 
 Package license: Apache-2.0
 
