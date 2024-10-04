@@ -41,7 +41,7 @@ test:
     - dask
     - openssh
   source_files:
-    - tests
+    - xopt/tests
   commands:
     - pytest tests
 
