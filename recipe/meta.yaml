@@ -43,7 +43,7 @@ test:
   source_files:
     - xopt/tests
   commands:
-    - pytest tests
+    - pytest xopt/tests
 
 about:
   home: https://github.com/xopt-org/{{ name }}
