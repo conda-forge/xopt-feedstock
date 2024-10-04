@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 412a288a6ed675584db4cf6acfedd9499e22c973591fe864d0b8ef00ba80c7d0
+  sha256: 123f5a25ea26717ad3c3815713432c733639dccdd506f1259cedd82af399e1db
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -41,9 +41,9 @@ test:
     - dask
     - openssh
   source_files:
-    - tests
+    - xopt/tests
   commands:
-    - pytest tests
+    - pytest xopt/tests
 
 about:
   home: https://github.com/xopt-org/{{ name }}
