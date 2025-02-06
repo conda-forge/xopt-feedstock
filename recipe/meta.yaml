@@ -27,7 +27,7 @@ requirements:
     - pyyaml
     - deap
     - pytorch
-    - botorch ==0.12.0
+    - botorch ==0.12
     - gpytorch
     - pandas
     - pydantic >=2.3
