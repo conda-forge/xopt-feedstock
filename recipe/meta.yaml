@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "xopt" %}
 {% set version = "2.5.3" %}
 
@@ -11,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - pyyaml
     - deap
@@ -41,6 +42,7 @@ test:
     - mpi4py
     - dask
     - openssh
+    - python {{ python_min }}
   source_files:
     - xopt/tests
   commands:
