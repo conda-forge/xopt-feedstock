@@ -1,5 +1,6 @@
 {% set name = "xopt" %}
 {% set version = "2.5.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -11,27 +12,27 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - pyyaml
     - deap
     - pytorch
-    - botorch
+    - botorch ==0.12
     - gpytorch
     - pandas
     - pydantic >=2.3
     - orjson
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
@@ -41,6 +42,7 @@ test:
     - mpi4py
     - dask
     - openssh
+    - python {{ python_min }}
   source_files:
     - xopt/tests
   commands:
