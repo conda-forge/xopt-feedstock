@@ -40,16 +40,14 @@ test:
   imports:
     - xopt
   requires:
+    - {{ compiler('cxx') }}
     - pytest
     - mpi4py
     - dask
     - openssh
     - libensemble
-    - python {{ python_min }}
-  source_files:
-    - xopt/tests
   commands:
-    - pytest xopt/tests
+    - pytest --pyargs xopt.tests -v
 
 about:
   home: https://github.com/xopt-org/{{ name }}
