@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "3.1.2" %}
+{% set version = "3.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 26c19015623b3e64c2a8804561a0796bb2fdd28ac7a65e0797666676eacfce36
+  sha256: 64f7b0cab84680fcfd661c4553d4fd6ca18f7278a91bffb30bfb2d46037cb7af
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - pydantic >=2.12
     - orjson
     - matplotlib-base
-    - gest-api
+    - gest-api >=0.2
     - scipy >=1.10.1
 
 test:
