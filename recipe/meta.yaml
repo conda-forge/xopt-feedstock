@@ -1,5 +1,5 @@
 {% set name = "xopt" %}
-{% set version = "3.2.2" %}
+{% set version = "3.3.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f8b65bd15ee439260cc6aaf13e8b2b421daa5880e13c85ec7cfeeb7fa8df3879
+  sha256: b29c706595a637b68d14b27c77fe2e647f5554ccca923f29840502bb12ac2610
 
 build:
   noarch: python
